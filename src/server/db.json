@@ -1,0 +1,14 @@
+{
+  "tutorial": [
+    {
+      "name": "NgRx In Depth",
+      "url": "https://www.udemy.com/ngrx-course/",
+      "id": 0
+    },
+    {
+      "name": "How to Build Angular Applications with NgRx2",
+      "url": "https://www.youtube.com/playlist?list=PLaMbwDs23r4KXoMucJEyUAvamQ-kFNBvC",
+      "id": 1
+    }
+  ]
+}

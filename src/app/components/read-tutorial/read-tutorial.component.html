@@ -1,0 +1,25 @@
+<div *ngIf="tutorials">
+  <h2>Tutorials</h2>
+  <ul>
+    <li *ngFor="let tutorial of tutorials | async; let i = index">
+      <a [href]="tutorial?.url"
+        target="_blank">Id{{ tutorial.id }}--{{ tutorial.name }}</a>
+      <span
+        class="glyphicon glyphicon-edit"
+        data-toggle="tooltip"
+        data-placement="top"
+        title="Edit this toturial"
+        (click)= editTutorial(tutorial)></span>
+      <span
+        class="glyphicon glyphicon-remove-circle"
+        data-toggle="tooltip"
+        data-placement="top"
+        title="Delete this toturial"
+        mwlConfirmationPopover
+        [popoverTitle]="popoverTitle"
+        [popoverMessage]="popoverMessage"
+        placement="right"
+        (confirm)=confirmDeleteTutorial(i,tutorial)></span>
+    </li>
+  </ul>
+</div>

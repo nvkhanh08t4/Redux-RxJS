@@ -1,0 +1,15 @@
+.glyphicon {
+  margin: 10px;
+  font-size: 15px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.glyphicon-remove-circle {
+  color: red;
+}
+
+.glyphicon-edit {
+  color:blueviolet;
+}

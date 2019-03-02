@@ -1,0 +1,32 @@
+
+<form [formGroup]="tutorialForm"
+  (ngSubmit)="tutorial? editTutorial(tutorialForm.value): addTutorial(tutorialForm.value)">
+  <legend>{{ tutorial? update: add }}</legend>
+  <div class="form-group" *ngIf="!tutorial">
+    <label for=""> {{ id }} </label>
+    <input
+      type="text"
+      class="form-control"
+      formControlName="id"
+      placeholder="ID tutorial">
+  </div>
+  <div class="form-group">
+    <label for=""> {{ name }} </label>
+    <input
+      type="text"
+      class="form-control"
+      formControlName="name"
+      placeholder="Input tutorial name">
+  </div>
+  <div class="form-group">
+    <label for=""> {{ url }} </label>
+    <input
+      type="text"
+      class="form-control"
+      formControlName="url"
+      placeholder="Input tutorial url">
+  </div>
+  <button
+    type="submit"
+    class="btn btn-primary">{{ tutorial? update: add }}</button>
+</form>
